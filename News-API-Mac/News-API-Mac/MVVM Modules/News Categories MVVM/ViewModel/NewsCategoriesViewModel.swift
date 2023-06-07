@@ -10,15 +10,15 @@ import Foundation
 class NewsCategoriesListViewModel: ObservableObject {
     
     @Published var categories = NewsCategories.categories
-    private let newsService = NewsService()
     
+    // MARK: - Init
     init() {
         GetNewsCategoriesData()
     }
     
     func GetNewsCategoriesData() {
         for category in categories {
-            newsService.execute(with: News.self, category: category.endpoint) { [weak self] result in
+            NewsService.shared.execute(with: News.self, category: category.endpoint) { [weak self] result in
                 switch result {
                 case .success(let data):
                     guard let news = data.articles else {return}
