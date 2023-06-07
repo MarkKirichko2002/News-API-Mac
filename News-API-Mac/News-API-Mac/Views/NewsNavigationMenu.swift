@@ -27,6 +27,8 @@ struct NewsNavigationMenu: View {
                 TopNewsListView()
             case 2:
                 NewsCategoriesListView()
+            case 3:
+                SearchNewsListView()
             default:
                 EmptyView()
             }
