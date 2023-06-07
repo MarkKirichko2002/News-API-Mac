@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewsCategoriesListView: View {
     
-    var viewModel = NewsCategoriesListViewModel()
+    @StateObject var viewModel = NewsCategoriesListViewModel()
     
     var body: some View {
         List(viewModel.categories, id: \.id) { category in
