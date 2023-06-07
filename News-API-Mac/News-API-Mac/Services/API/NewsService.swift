@@ -16,6 +16,10 @@ class NewsService {
     
     private var url = ""
     
+    static let shared = NewsService()
+    
+    private init() {}
+    
     func execute<T: Codable>(with type: T.Type, category: NewsCategory, completion: @escaping(Result<T, Error>)->Void) {
         url = "https://newsapi.org/v2/top-headlines?country=ru&category=\(category.rawValue)&apiKey=\(Contacts.apiKey)"
         

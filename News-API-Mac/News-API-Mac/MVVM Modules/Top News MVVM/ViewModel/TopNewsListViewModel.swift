@@ -10,14 +10,14 @@ import Foundation
 class TopNewsListViewModel: ObservableObject {
     
     @Published var news = [Article]()
-    private let newsService = NewsService()
     
+    // MARK: - Init
     init() {
         getTopNews()
     }
     
     func getTopNews() {
-        newsService.execute(with: News.self, category: .general) { [weak self] result in
+        NewsService.shared.execute(with: News.self, category: .general) { [weak self] result in
             switch result {
             case .success(let data):
                 guard let news = data.articles else {return}

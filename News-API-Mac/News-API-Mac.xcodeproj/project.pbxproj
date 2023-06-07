@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				828AF8172A2FD2CF0041AAB5 /* Top News MVVM */,
-				828AF80A2A2FCD330041AAB5 /* News Categories */,
+				828AF80A2A2FCD330041AAB5 /* News Categories MVVM */,
 				828AF81C2A2FDFDE0041AAB5 /* Current Category News MVVM */,
 			);
 			path = "MVVM Modules";
@@ -208,14 +208,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		828AF80A2A2FCD330041AAB5 /* News Categories */ = {
+		828AF80A2A2FCD330041AAB5 /* News Categories MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				828AF8152A2FCF6D0041AAB5 /* Model */,
 				828AF8142A2FCF6B0041AAB5 /* View */,
 				828AF8132A2FCF690041AAB5 /* ViewModel */,
 			);
-			path = "News Categories";
+			path = "News Categories MVVM";
 			sourceTree = "<group>";
 		};
 		828AF8132A2FCF690041AAB5 /* ViewModel */ = {
