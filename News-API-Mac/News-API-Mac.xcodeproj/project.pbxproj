@@ -163,13 +163,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		828AF7F52A2F9DFB0041AAB5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		828AF7F82A2F9E6A0041AAB5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +228,6 @@
 		828AF8172A2FD2CF0041AAB5 /* Top News MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				828AF7F52A2F9DFB0041AAB5 /* Model */,
 				828AF7F42A2F9DF90041AAB5 /* View */,
 				828AF7F32A2F9DF60041AAB5 /* ViewModel */,
 			);
